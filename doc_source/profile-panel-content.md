@@ -7,7 +7,7 @@ Profile panels use different types of visualizations to present different types 
 Profile panels typically provide the following types of data:
 
 
-|  Panel Data Type  |  Description  | 
+|  Panel data type  |  Description  | 
 | --- | --- | 
 |  High\-level information about a finding or entity  |  The simplest type of panel provides some basic information about a finding or entity\. Examples of information included on an information panel include the identifier, name, type, and creation date\. ![\[Example of a profile panel containing high-level information about a finding or entity.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_item_details.png) Most finding and entity profiles contain an information panel for that finding or entity\. Finding profiles can also include an information panel about the involved entity\.  | 
 |  General summary of activity over time  |  Displays a summary of activity for an entity over time\. This type of panel provides an overall view of how an entity is behaving during the scope time\. ![\[Example of a profile panel containing an overview of activity over time for an entity.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_activity_summary.png) Here are some examples of summary data provided on Detective profile panels: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/detective/latest/userguide/profile-panel-content.html)  | 

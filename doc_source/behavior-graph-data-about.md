@@ -8,6 +8,8 @@ The behavior graph uses the source data to do the following:
 + Generate an overall picture of your systems, users, and the interactions among them over time
 + Perform more detailed analysis of specific activity to help you answer specific questions that arise as you conduct investigations
 
+Note that all extraction, modeling, and analytics of behavior graph data occurs within the context of each individual behavior graph\.
+
 For information about how a master account manages the member accounts in a behavior graph, see [For master Accounts: Managing the accounts in your behavior graph](https://docs.aws.amazon.com/detective/latest/adminguide/master-account-graph-management.html) in *Detective Administration Guide*\.
 
 **Topics**

@@ -80,5 +80,6 @@ If the values are correct, then you can also check the following\.
 
   If an invited member account did not accept the invitation, then the behavior graph does not contain data for that account\.
 + **For a finding, does Detective support that finding type?** If the finding type is not one of the types listed in [Supported finding types](supported-finding-types.md), then the behavior graph does not contain data for it\.
++ **For a finding, is the finding archived?** Detective does not receive archived findings from Amazon GuardDuty\.
 + **Did the finding or entity occur before Detective began to ingest data into your behavior graph?** If the finding or entity is not present in the data that Detective ingests, then the behavior graph does not contain data for it\.
 + **Is the finding or entity from the correct Region?** Each behavior graph is specific to a Region\. A behavior graph does not contain data from other Regions\.

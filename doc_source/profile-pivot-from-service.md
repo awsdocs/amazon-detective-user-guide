@@ -45,5 +45,6 @@ If the pivot does not work, check the following\.
 + **Does the finding belong to an enabled member account in your behavior graph?** If the associated account was not invited to the behavior graph as a member account, then the behavior graph does not contain data for that account\.
 
   If an invited member account did not accept the invitation, then the behavior graph does not contain data for that account\.
-+ **Did the finding occur before Amazon Detective began to ingest data into your behavior graph?** If the finding is not present in the data that Detective ingests, then the behavior graph does not contain data for it\.
++ **Is the finding archived?** Detective does not receive archived findings from GuardDuty\.
++ **Did the finding occur before Detective began to ingest data into your behavior graph?** If the finding is not present in the data that Detective ingests, then the behavior graph does not contain data for it\.
 + **Is the finding from the correct Region?** Each behavior graph is specific to a Region\. A behavior graph does not contain data from other Regions\.
