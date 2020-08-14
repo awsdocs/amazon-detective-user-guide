@@ -9,6 +9,7 @@ For finding profiles, most of the profile panels contain information related to 
 **Topics**
 + [Profile panel content](profile-panel-content.md)
 + [Setting the number of rows per page for profile panel tables](profile-panel-table-preferences.md)
++ [Pivoting from a profile panel to another console](profile-panel-console-links.md)
 + [Pivoting from a profile panel to another entity or finding profile](profile-panel-pivot.md)
 + [Exploring activity details on a profile panel](profile-panel-drilldown.md)
 + [Viewing a list of findings that involve an entity](profile-panel-finding-list.md)

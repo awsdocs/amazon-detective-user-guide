@@ -32,6 +32,7 @@ Amazon's trademarks and trade dress may not be used in
 + [Viewing and interacting with profile panels](profile-panels.md)
    + [Profile panel content](profile-panel-content.md)
    + [Setting the number of rows per page for profile panel tables](profile-panel-table-preferences.md)
+   + [Pivoting from a profile panel to another console](profile-panel-console-links.md)
    + [Pivoting from a profile panel to another entity or finding profile](profile-panel-pivot.md)
    + [Exploring activity details on a profile panel](profile-panel-drilldown.md)
       + [Activity details for Overall API call volume](profile-panel-drilldown-overall-api-volume.md)

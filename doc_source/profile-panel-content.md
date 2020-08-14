@@ -20,7 +20,7 @@ Profile panels typically provide the following types of data:
 Profile panel content can take one of the following forms:
 
 
-|  Visualization Type  |  Description  | 
+|  Visualization type  |  Description  | 
 | --- | --- | 
 |  Key\-value pairs  |  The simplest type of visualization is a set of key\-value pairs\. A finding or entity information panel is the most common example of a key\-value pair panel\. ![\[Example of a profile panel containing key/value pairs.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_key_value.png) Key\-value pairs can also be used to add additional information to other types of panels\. From a key\-value pair panel, if a value is an identifier of a finding or entity, then you can pivot to its profile\.  | 
 |  Table  |  A table is a simple multiple\-column list of items\. ![\[Example of a profile panel containing a simple table.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_table.png) Users can sort, filter, and page through the table\. You can change the number of entries to display per page\. See [Setting the number of rows per page for profile panel tables](profile-panel-table-preferences.md)\. If a value in the table is an identifier of a finding or entity, then you can pivot to its profile\.  | 
