@@ -20,13 +20,15 @@ A finding profile appears when you perform one of the following actions:
 
 ## Scope time used for the finding profile<a name="finding-profile-scope-time"></a>
 
-The scope time used for the finding profile is based on whether the scope time is currently locked\.
-+ If the scope time is locked, the profile uses that locked scope time\.
-+ If the scope time is not locked, the finding profile scope time is based on the finding time window\. The finding time window reflects the start and end times when the suspicious activity occurred\. The profile scope time expands that window to start and end on the borders of a Detective time interval\.
+When you navigate directly to a finding profile without providing a scope time, the scope time is set to the finding time window\. The finding time window reflects the first and last time that the finding activity was observed\.
 
-All times are displayed in UTC\.
+When you navigate to a finding profile from another profile, the currently selected scope time remains in place\.
 
-For information on setting and locking the scope time, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\.
+All times are in UTC\.
+
+If the current scope time does not match the finding time window, a warning is displayed\.
+
+For information on setting the scope time, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\. When you edit the scope time from a finding profile, you can choose to align the scope time to the finding time window\.
 
 ## Finding title and type<a name="finding-profile-id-description"></a>
 

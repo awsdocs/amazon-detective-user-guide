@@ -4,8 +4,6 @@ When a profile panel contains an identifier of a different finding or entity, it
 
 For example, from a list of IP addresses, you might be able to display the profile for a specific IP address\. That way you can see if there is any other information available to help you to complete your investigation\.
 
-The scope time used on the profile you pivot to is based on whether the scope time is locked\.
-+ If the scope time is locked, then the profile you pivot to uses the same scope time as the profile you pivot from\.
-+ If the scope time is not locked, then the profile you pivot to uses the default scope time for the profile\.
+When you pivot to a finding profile, if the scope time does not match the finding time window, a warning is displayed\.
 
-See [Locking or unlocking the scope time](scope-time-lock-unlock.md)\.
+For information on setting the scope time, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\. When you edit the scope time from a finding profile, you can choose to align the scope time to the finding time window\.

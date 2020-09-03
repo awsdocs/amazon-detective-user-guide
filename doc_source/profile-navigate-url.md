@@ -11,10 +11,10 @@ https://console\.aws\.amazon\.com/detective/home?region=*Region*\#*type*/*namesp
 The URL requires the following values\.
 
 ***Region***  
-The Region you want to use\.
+The Region that you want to use\.
 
 ***type***  
-The type of item for the profile you are navigating to\.  
+The type of item for the profile that you are navigating to\.  
 + `findings` \- Indicates that you are navigating to a finding profile
 + `entities` \- Indicates that you are navigating to an entity profile
 
@@ -50,23 +50,17 @@ End time for the scope time to use on the profile\.
 The value is the epoch timestamp\.  
 If you provide an end time, but no start time, then the scope time includes all time before the end time\.
 
-**`scopeLocked`**  
-Whether to lock the scope time\. When the scope time is locked, it remains in place as you navigate to other profiles\.  
-By default, the scope time is unlocked \(`scopeLocked=false`\)\.  
-To lock the scope time, set `scopeLocked=true`\.
-
 If you don't specify the scope time, then the default scope time is used\.
 + For findings, the default scope time uses the first and last times that the finding activity was observed\.
 + For entities, the default scope time is the previous 24 hours\.
 
 Here is an example of a Detective URL:
 
-`https://console.aws.amazon.com/detective/home?region=us-east-1#entities/IpAddress/192.168.1.1?scopeStart=1552867200&scopeEnd=1552910400&scopeLocked`
+`https://console.aws.amazon.com/detective/home?region=us-east-1#entities/IpAddress/192.168.1.1?scopeStart=1552867200&scopeEnd=1552910400`
 
 This example URL provides the following instructions\.
 + Display the entity profile for the IP address 192\.168\.1\.
 + Use a scope time that starts Monday, March 18, 2019 12:00:00 AM GMT and that ends Monday, March 18, 2019 12:00:00 PM GMT\.
-+ Lock the scope time\.
 
 ## Troubleshooting a URL<a name="profile-url-troubleshooting"></a>
 

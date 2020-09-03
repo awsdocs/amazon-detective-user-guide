@@ -17,13 +17,13 @@ An entity profile appears when you perform one of the following actions:
 
 ## Scope time for an entity profile<a name="entity-profile-scope-time"></a>
 
-The scope time used for the entity profile is based on whether the scope time is currently locked\.
-+ If the scope time is locked, the profile uses that locked scope time\.
-+ If the scope time is not locked, the profile scope time is the previous 24 hours\.
+When you navigate directly to an entity profile without providing the scope time, the scope time is set to the previous 24 hours\.
+
+When you navigate to an entity profile from another profile, the currently selected scope time remains in place\.
 
 All times are displayed in UTC\.
 
-For information on setting and locking the scope time, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\.
+For information on setting the scope time, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\.
 
 ## Entity identifier and type<a name="entity-identifier-type"></a>
 
