@@ -5,6 +5,7 @@ The following table provides a history of the updates to this guide\.
 
 |  Change  |  Description  |  Date  | 
 | --- | --- | --- | 
+|  [New role session and federated user entities](https://docs.aws.amazon.com/detective/latest/userguide/graph-data-structure-overview.html#entity-types)  |  Detective now allows you to explore and investigate federated authentication\. You can see what resources have assumed each role, and when those authentications occurred\.  |  September 17, 2020  | 
 |  [Updates to scope time management](https://docs.aws.amazon.com/detective/latest/userguide/scope-time-managing.html)  |  Removed the option to lock or unlock the scope time\. It is always locked\. On a finding profile, a warning is displayed if the scope time is different from the finding time window\.  |  September 4, 2020  | 
 |  [Profile header remains visible as you scroll through a profile](https://docs.aws.amazon.com/detective/latest/userguide/profile-navigating.html)  |  On profiles, the type, identifier, and scope time remain visible as you scroll through the profile panels on a tab\. When the tabs are not visible, you can use the tab dropdown list in the breadcrumbs to navigate to a different tab\.  |  September 4, 2020  | 
 |  [Added to the allowed criteria for searches](https://docs.aws.amazon.com/detective/latest/userguide/detective-search.html)  |  The allowed criteria for searches has expanded\. You can search for AWS users and AWS roles by name\. You can use the ARN to search for findings, AWS roles, AWS users, and EC2 instances\.   |  August 27, 2020  | 

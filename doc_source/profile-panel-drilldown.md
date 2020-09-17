@@ -4,7 +4,7 @@ After making an initial assessment that a finding might be a true positive, the 
 
 On the following profile panels, you can display a summary of the activity details\.
 + **Overall API call volume**, except for the profile panels on the IP address profile and the user agent profile
-+ **Newly observed geolocations**
++ **Newly observed geolocations**, except for the profile panel on the federated user profile
 + **Overall VPC flow volume**
 
 The activity details can answer these types of questions:

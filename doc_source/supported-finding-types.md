@@ -60,10 +60,10 @@ A principal invoked an API commonly used to stop CloudTrail logging, delete exis
 Account password policy was weakened\.
 
 `UnauthorizedAccess:IAMUser/ConsoleLogin`  
-An unusual console login by a principal in your AWS account was observed\.
+An unusual console sign\-in by a principal in your AWS account was observed\.
 
 `UnauthorizedAccess:IAMUser/ConsoleLoginSuccess.B`  
-Multiple worldwide successful console logins were observed\.
+Multiple worldwide successful console sign\-ins were observed\.
 
 `UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration`  
 Credentials that were created exclusively for an EC2 instance through an instance launch role are being used from an external IP address\.

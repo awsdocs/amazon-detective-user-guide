@@ -24,8 +24,10 @@ For findings, the namespace identifies the finding provider\. For example, for A
 For entities, the namespace is the name of the entity type\.  
 + `AwsAccount`
 + `AwsRole`
++ `AwsRoleSession`
 + `AwsUser`
 + `Ec2Instance`
++ `FederatedUser`
 + `IpAddress`
 + `UserAgent`
 
@@ -34,8 +36,10 @@ The instance identifier of the finding or entity\.
 + For a GuardDuty finding, the GuardDuty finding identifier\.
 + For an AWS account, the account ID\.
 + For AWS roles and users, the principal ID of the role or of the user\.
++ For federated users, the principal ID of the federated user\. The principal ID is either `<identityProvider>:<username>` or `<identityProvider>:<audience>:<username>`\.
 + For IP addresses, the IP address\.
 + For user agents, the user agent name\.
++ For role sessions, the session identifier\. The session identifier uses the format` <rolePrincipalID>:<sessionName>`\.
 The finding or entity must be associated with an enabled account in your behavior graph\.
 
 The URL can also include the following optional parameters, which are used to set the scope time\. For more information about scope time and how it is used on profiles, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\.

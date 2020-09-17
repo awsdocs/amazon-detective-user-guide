@@ -4,15 +4,26 @@ With the Amazon Detective search function, you can search for a finding or entit
 
 ## Completing the search<a name="detective-search-completing"></a>
 
-To complete the search, you select the type of entity to search for\. Then provide the identifier to search for\.
+To complete the search, you choose the type of entity to search for\. Then provide the identifier to search for\.
 
 For each entity type, the following identifiers are supported\.
 + For AWS accounts, the account ID\.
 + For IP addresses, the address\.
 + For AWS roles and AWS users, either the principal ID, the name, or the ARN\.
++ For federated users, the principal ID or the user name\. The principal ID is either `<identityProvider>:<username>` or `<identityProvider>:<audience>:<username>`\.
 + For user agents, the user agent name\.
-+ For Amazon EC2 instances, the instance identifier or the ARN\.
-+ For finding, the finding identifier or finding ARN\.
++ For EC2 instances, the instance identifier or the ARN\.
++ For a role session, you can use any of the following values to search:
+  +  Role session identifier\.
+
+    The role session identifier uses the format `<rolePrincipalID>:<sessionName>`\.
+
+    Here is an example: `AROA12345678910111213:MySession`\.
+  + Role session ARN
+  + Session name
+  + Principal ID of the role that was assumed
+  + Name of the role that was assumed
++ For findings, the finding identifier or finding ARN\.
 
   The finding type must be one that Detective supports\. See [Supported finding types](supported-finding-types.md)\.
 
@@ -23,6 +34,8 @@ For each entity type, the following identifiers are supported\.
 1. In the navigation pane, choose **Search**\.
 
 1. From the **Choose type** menu, choose the type of item you are looking for\.
+
+   Note that when you choose **User**, you can search for either an AWS user or a federated user\.
 
    **Examples from your data** contains a sample set of identifiers of the selected type that are in your behavior graph data\. To display the profile for one of the examples, choose its identifier\.
 
