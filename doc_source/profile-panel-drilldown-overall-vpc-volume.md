@@ -2,11 +2,13 @@
 
 The activity details for **Overall VPC flow volume** show the interactions between an EC2 instance and IP addresses during a selected time range\.
 
-To display the activity details, choose **View flow details**\.
+To display the activity details for a single time interval, choose the time interval on the chart\.
+
+To display the activity details for the current scope time, choose **display details for scope time**\.
 
 ## Content of the activity details<a name="drilldown-vpc-volume-content"></a>
 
-When you first display the activity details, the content reflects the activity during the current scope time\.
+The content reflects the activity during the selected time range\.
 
 The activity details contain an entry for each unique combination of IP address, local port, remote port, protocol, and direction\.
 
@@ -50,9 +52,7 @@ To focus on specific activity, you can filter the activity details by the follow
 
 ## Selecting the time range for the activity details<a name="drilldown-vpc-volume-time-range"></a>
 
-The time range for the activity details is highlighted on the profile panel charts\.
-
-By default, the activity details are for the current scope time\. You can change the time range for the activity details\.
+ When you first display the activity details, the time range is either the scope time or a selected time interval\. You can change the time range for the activity details\.
 
 **To change the time range for the activity details**
 

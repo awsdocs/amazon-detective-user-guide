@@ -1,12 +1,14 @@
 # Activity details for Overall API call volume<a name="profile-panel-drilldown-overall-api-volume"></a>
 
-The activity details for **Overall API call volume** show the API calls that were issued during a selected time interval\.
+The activity details for **Overall API call volume** show the API calls that were issued during a selected time range\.
 
-To display the activity details, choose a time interval\.
+To display the activity details for a single time interval, choose the time interval on the chart\.
+
+To display the activity details for the current scope time, choose **Display details for scope time**\.
 
 ## Content of the activity details<a name="drilldown-api-volume-content"></a>
 
-Each tab provides information about the set of API calls that were issued during the selected time interval\.
+Each tab provides information about the set of API calls that were issued during the selected time range\.
 
 For each entry, the activity details show the number of successful and failed calls\. The **Observed IP addresses** tab also shows the location of each IP address\.
 
@@ -65,3 +67,19 @@ On all of the tabs, you can filter the list by any of the values in the first co
 1. To remove a filter, choose the **x** icon in the top right corner\.
 
 1. To clear all of the filters, choose **Clear filter**\.
+
+## Selecting the time range for the activity details<a name="drilldown-api-volume-time-range"></a>
+
+ When you first display the activity details, the time range is either the scope time or a selected time interval\. You can change the time range for the activity details\.
+
+**To change the time range for the activity details**
+
+1. Choose **Edit**\.
+
+1. On **Edit time window**, choose the start and end time to use\.
+
+1. Choose **Update time window**\.
+
+The time range for the activity details is highlighted on the profile panel charts\.
+
+![\[Highlighted time window for the Overall API call volume profile panel\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_timehighlight.png)
