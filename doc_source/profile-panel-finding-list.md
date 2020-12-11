@@ -12,6 +12,7 @@ The listed findings were observed during the current scope time plus additional 
 
 For each finding, the list includes the following information:
 + The finding title, which is also a link to the finding profile
++ The AWS account associated with the finding, which is also a link to the account profile
 + The finding type
 + The earliest time that the finding was observed
 + The most recent time that the finding was observed

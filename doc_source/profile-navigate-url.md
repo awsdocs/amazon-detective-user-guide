@@ -39,6 +39,7 @@ The instance identifier of the finding or entity\.
 + For federated users, the principal ID of the federated user\. The principal ID is either `<identityProvider>:<username>` or `<identityProvider>:<audience>:<username>`\.
 + For IP addresses, the IP address\.
 + For user agents, the user agent name\.
++ For EC2 instances, the instance ID\.
 + For role sessions, the session identifier\. The session identifier uses the format` <rolePrincipalID>:<sessionName>`\.
 The finding or entity must be associated with an enabled account in your behavior graph\.
 

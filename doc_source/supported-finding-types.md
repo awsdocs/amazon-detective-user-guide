@@ -1,5 +1,7 @@
 # Supported finding types<a name="supported-finding-types"></a>
 
+
+
 Amazon Detective only ingests and provides profiles for the Amazon GuardDuty finding types that are listed below\. GuardDuty detects some of these findings from CloudTrail data, and some from VPC flow data\.
 
 For a detailed description of each finding type, see the [list of finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html) in the *Amazon GuardDuty User Guide*
