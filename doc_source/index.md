@@ -39,5 +39,6 @@ Amazon's trademarks and trade dress may not be used in
       + [Activity details for Overall VPC flow volume](profile-panel-drilldown-overall-vpc-volume.md)
    + [Viewing a list of findings that involve an entity](profile-panel-finding-list.md)
    + [Using profile panel guidance during an investigation](profile-panel-guidance.md)
++ [Viewing details for high-volume entities](high-degree-entities.md)
 + [Archiving an Amazon GuardDuty finding](finding-update-status.md)
 + [Document history for Detective User Guide](doc-history.md)
