@@ -7,6 +7,9 @@ An Amazon Detective entity profile is a single page that provides detailed infor
 ## How to display an entity profile<a name="entity-profiles-display"></a>
 
 An entity profile appears when you perform one of the following actions:
++ From Amazon GuardDuty, choose the option to investigate an entity that is related to a selected finding\.
+
+  See [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
 + Go to the Detective URL for the entity profile\.
 
   See [Navigating to a profile using a URL](profile-navigate-url.md)\.

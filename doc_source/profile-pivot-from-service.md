@@ -1,12 +1,14 @@
-# Pivoting to a finding profile from Amazon GuardDuty or AWS Security Hub<a name="profile-pivot-from-service"></a>
+# Pivoting to a profile from Amazon GuardDuty or AWS Security Hub<a name="profile-pivot-from-service"></a>
 
-From the Amazon GuardDuty and AWS Security Hub consoles, you can navigate to Amazon Detective finding profiles\.
+From the Amazon GuardDuty and AWS Security Hub consoles, you can navigate to Amazon Detective finding profiles\. From GuardDuty, you can also navigate to the entity profile for an entity that is related to a finding\.
 
 These links can help to streamline the investigation process\. When a finding might be a genuine cause for concern, you can quickly use Detective to see the associated resource activity and determine next steps\. You can then archive the finding if it is a false positive or explore further to determine the scope of the problem\.
 
 ## How to pivot to the Amazon Detective console<a name="profile-pivot-how-to"></a>
 
-The investigation links only work for GuardDuty finding types that Detective supports\. See [Supported finding types](supported-finding-types.md)\.
+In Security Hub, the investigation links only work for GuardDuty finding types that Detective supports\. See [Supported finding types](supported-finding-types.md)\.
+
+In GuardDuty, the investigation links are available for all GuardDuty findings\. GuardDuty presents different investigation options based on whether Detective supports the finding type\.
 
 **To pivot to Detective from the GuardDuty console**
 
@@ -14,9 +16,21 @@ The investigation links only work for GuardDuty finding types that Detective sup
 
 1. If necessary, choose **Findings** in the left navigation pane\.
 
-1. On the GuardDuty **Findings** page, choose the check box for the finding\.
+1. On the GuardDuty **Findings** page, choose the finding\.
 
-1. From the **Actions** menu, choose **Investigate in Detective**\.
+   The finding details pane displays to the right of the finding list\.
+
+1. On the finding details pane, choose **Investigate in Detective**\.
+
+   GuardDuty displays a list of available items to investigate in Detective\.
+
+   The list always contains related entities, such as IP addresses or EC2 instances associated with the finding\.
+
+   If the finding type is supported in Detective, then the list also includes the finding\.
+
+1. Choose an entity or the finding\.
+
+   The Detective console opens in a new tab\. The console opens to the entity or finding profile\.
 
 **To pivot to Detective from the Security Hub console**
 

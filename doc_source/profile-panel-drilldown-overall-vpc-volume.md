@@ -60,6 +60,8 @@ To focus on specific activity, you can filter the activity details by the follow
 
 1. On **Edit time window**, choose the start and end time to use\.
 
+   To set the time window to the default scope time for the profile, choose **Set to default scope time**\.
+
 1. Choose **Update time window**\.
 
 The time range for the activity details is highlighted on the profile panel charts\.

@@ -9,7 +9,7 @@ A Detective finding profile is a single page that provides a collection of data 
 A finding profile appears when you perform one of the following actions:
 + For findings that are loaded into Detective, pivot to Detective from the finding details in GuardDuty or Security Hub\. 
 
-  See [Pivoting to a finding profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
+  See [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
 + Navigate to the Detective URL for the finding profile\. 
 
   See [Navigating to a profile using a URL](profile-navigate-url.md)\.

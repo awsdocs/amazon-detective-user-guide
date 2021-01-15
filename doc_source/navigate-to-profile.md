@@ -5,5 +5,5 @@ To navigate directly to a profile in Amazon Detective, you can use one of these 
 + You can assemble a Detective URL that identifies a finding or entity and sets the scope time to use\.
 
 **Topics**
-+ [Pivoting to a finding profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)
++ [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)
 + [Navigating to a profile using a URL](profile-navigate-url.md)

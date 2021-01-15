@@ -55,7 +55,7 @@ At a high level, the following image shows the process for investigating a findi
 
 1. The first step is to select a finding to triage\.
 
-   When looking at a finding in GuardDuty or AWS Security Hub, analysts can choose to investigate the finding in Detective\. See [Pivoting to a finding profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
+   When looking at a finding in GuardDuty or AWS Security Hub, analysts can choose to investigate the finding in Detective\. See [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
 
    From within Detective, analysts can use the Detective search function to find and select a finding to triage\. See [Searching for a finding or entity](detective-search.md)\.
 

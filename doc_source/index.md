@@ -1,7 +1,7 @@
 # Amazon Detective User Guide
 
 -----
-*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2021 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -21,7 +21,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Overview of the behavior graph data structure](graph-data-structure-overview.md)
    + [Supported finding types](supported-finding-types.md)
 + [Navigating directly to a profile](navigate-to-profile.md)
-   + [Pivoting to a finding profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)
+   + [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)
    + [Navigating to a profile using a URL](profile-navigate-url.md)
 + [Searching for a finding or entity](detective-search.md)
 + [Managing the scope time used on finding and entity profiles](scope-time-managing.md)
