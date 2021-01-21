@@ -1,9 +1,9 @@
 # Exploring activity details on a profile panel<a name="profile-panel-drilldown"></a>
 
-After making an initial assessment that a finding might be a true positive, the next step is to dig deeper into the pattern of activity for the related resources\.
+After you assess that a finding might be a true positive, the next step is to dig deeper into the pattern of activity for the related resources\.
 
-On the following profile panels, you can display a summary of the activity details\.
-+ **Overall API call volume**, except for the profile panels on the IP address profile and the user agent profile
+On the following profile panels, you can display a summary of the activity details:
++ **Overall API call volume**, except for the profile panel on the user agent profile
 + **Newly observed geolocations**, except for the profile panel on the federated user profile
 + **Overall VPC flow volume**
 

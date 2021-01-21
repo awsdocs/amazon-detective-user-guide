@@ -6,18 +6,18 @@ To display the activity details for a single time interval, choose the time inte
 
 To display the activity details for the current scope time, choose **Display details for scope time**\.
 
-## Content of the activity details<a name="drilldown-api-volume-content"></a>
+## Content of the activity details \(users, roles, accounts, role sessions\)<a name="drilldown-api-volume-content"></a>
 
-Each tab provides information about the set of API calls that were issued during the selected time range\.
-
-For each entry, the activity details show the number of successful and failed calls\. The **Observed IP addresses** tab also shows the location of each IP address\.
+For users, roles, accounts, and role sessions, the activity details contain the following information:
++ Each tab provides information about the set of API calls that were issued during the selected time range\.
++ For each entry, the activity details show the number of successful and failed calls\. The **Observed IP addresses** tab also shows the location of each IP address\.
 
 The activity details contain the following tabs:
 
 **Observed IP addresses**  
 Initially displays the list of IP addresses used to issue API calls\.  
 You can expand each IP address to display the list of API calls that were issued from that IP address\.  
-You can then expand each API call to display the list of AKIDs that issued that API call from that IP address\.  
+You can then expand each API call to display the list of access key identifiers \(AKIDs\) that issued that API call from that IP address\.  
 
 ![\[View of the Observed IP addresses tab of the Overall API call volume panel, with an entry expanded to show the hierarchy of IP address, API calls, and AKIDs.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_ipaddress.png)
 
@@ -34,6 +34,27 @@ You can expand each AKID to display the list of IP addresses from which the AKID
 You can then expand each IP address to display the list of API calls that were issued from that IP address using that AKID\.  
 
 ![\[View of the Access key ID tab of the Overall API call volume panel, with an entry expanded to show the hierarchy of AKIDs, IP addresses, and API calls.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_akids.png)
+
+## Content of the activity details \(IP addresses\)<a name="drilldown-api-volume-content-ip"></a>
+
+For IP addresses, the activity details contain the following information:
++ Each tab provides information about the set of API calls that were issued during the selected time range\.
++ For each entry, the activity details show the number of successful and failed calls\.
+
+The activity details contain the following tabs:
+
+**Resource**  
+Initially displays the list of resources that issued API calls from the IP address\.  
+For each resource, the list includes the resource name, the type, and the AWS account\.  
+You can expand each resource to display the list of API calls that the resource issued from the IP address\.  
+
+![\[View of the Resource tab of the activity details on the Overall API call volume profile panel for an IP address\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_ip_resource.png)
+
+**API method**  
+Initially displays the list of API calls that were issued\.  
+You can expand each API call to display the list of resources that issued the API call from the IP address during the selected time period\.  
+
+![\[View of the API method tab of the activity details of the Overall API call volume profile panel for an IP address\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_ip_apimethods.png)
 
 ## Sorting the activity details<a name="drilldown-api-volume-sort"></a>
 

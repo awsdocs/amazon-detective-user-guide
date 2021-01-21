@@ -1,6 +1,8 @@
 # Activity details for Overall VPC flow volume<a name="profile-panel-drilldown-overall-vpc-volume"></a>
 
-The activity details for **Overall VPC flow volume** show the interactions between an EC2 instance and IP addresses during a selected time range\.
+For an EC2 instance, the activity details for **Overall VPC flow volume** show the interactions between the EC2 instance and IP addresses during a selected time range\.
+
+For an IP address, the activity details for **Overall VPC flow volume** show the interactions between the IP address and EC2 instances during a selected time range\.
 
 To display the activity details for a single time interval, choose the time interval on the chart\.
 
@@ -10,7 +12,9 @@ To display the activity details for the current scope time, choose **display det
 
 The content reflects the activity during the selected time range\.
 
-The activity details contain an entry for each unique combination of IP address, local port, remote port, protocol, and direction\.
+For an EC2 instance, the activity details contain an entry for each unique combination of IP address, local port, remote port, protocol, and direction\.
+
+For an IP address, the activity details contain an entry for each unique combination of EC2 instance, local port, remote port, protocol, and direction\.
 
 Each entry displays the volume of inbound traffic, the volume of outbound traffic, and whether the access request was accepted or rejected\. On finding profiles, the **Annotations** column indicates when an IP address is related to the current finding\.
 
@@ -25,7 +29,7 @@ By default, the activity details are sorted first by the annotations, then by th
 ## Filtering the activity details<a name="drilldown-vpc-volume-filter"></a>
 
 To focus on specific activity, you can filter the activity details by the following values:
-+ IP address
++ IP address or EC2 instance
 + Local or remote port
 + Direction
 + Protocol

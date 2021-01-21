@@ -15,6 +15,8 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [How Amazon Detective is used for investigation](detective-investigation-about.md)
+   + [Investigation phases and starting points](investigation-phases-starts.md)
+   + [Investigation flows in Amazon Detective](detective-investigation-flow.md)
 + [Data in a behavior graph](behavior-graph-data-about.md)
    + [How Amazon Detective uses source data to populate a behavior graph](behavior-graph-population-about.md)
    + [Training period for new behavior graphs](detective-data-training-period.md)
@@ -24,6 +26,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)
    + [Navigating to a profile using a URL](profile-navigate-url.md)
 + [Searching for a finding or entity](detective-search.md)
++ [Using the Summary page to identify an entity of interest](summary-page.md)
 + [Managing the scope time used on finding and entity profiles](scope-time-managing.md)
 + [Analyzing finding details](finding-profiles.md)
 + [Analyzing entity details](entity-profiles.md)
