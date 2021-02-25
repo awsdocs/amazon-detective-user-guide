@@ -49,10 +49,10 @@ In GuardDuty, the investigation links are available for all GuardDuty findings\.
 ## Troubleshooting the pivot<a name="profile-pivot-troubleshooting"></a>
 
 To use the pivot, one of the following must be true:
-+ Your account must be a master account for both Detective and the service you are pivoting from\.
-+ You have assumed a cross\-account role that grants you master account access to the behavior graph\.
++ Your account must be an administrator account for both Detective and the service you are pivoting from\.
++ You have assumed a cross\-account role that grants you administrator account access to the behavior graph\.
 
-For more information about the recommendation to align master accounts, see [Recommended alignment with Amazon GuardDuty and AWS Security Hub](https://docs.aws.amazon.com/detective/latest/adminguide/detective-prerequisites.html#recommended-service-alignment) in *Detective Administration Guide*\.
+For more information about the recommendation to align administrator accounts, see [Recommended alignment with Amazon GuardDuty and AWS Security Hub](https://docs.aws.amazon.com/detective/latest/adminguide/detective-prerequisites.html#recommended-service-alignment) in *Detective Administration Guide*\.
 
 If the pivot does not work, check the following\.
 + **Does Detective support that finding type?** If the finding type is not one of the types listed in [Supported finding types](supported-finding-types.md), then the behavior graph does not contain data for it\.

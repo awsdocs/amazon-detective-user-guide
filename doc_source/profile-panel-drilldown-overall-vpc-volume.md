@@ -82,4 +82,4 @@ For each row to add to the charts, select the check box\. For each selected row,
 
 To focus on the traffic volume for the selected entries, you can hide the overall volume\. To show or hide the overall traffic volume, toggle **Overall traffic**\.
 
-![\[Traffic for selected activity details rows displayed on the main charts on the Overall VPC flow volume profile panel . Overall traffic is hidden.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_vpc_overall_off.png)
+![\[Traffic for selected activity details rows displayed on the main charts on the Overall VPC flow volume profile panel. Overall traffic is hidden.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_vpc_overall_off.png)

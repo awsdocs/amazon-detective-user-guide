@@ -2,7 +2,7 @@
 
 When you complete your investigation of an Amazon GuardDuty finding, you can archive the finding from Amazon Detective\. This saves you the trouble of having to return to GuardDuty to make the update\. Archiving a finding indicates that you have finished your investigation of it\.
 
-You can only archive a GuardDuty finding from within Detective if you are also the GuardDuty master account for the account associated with the finding\. If you are not a GuardDuty master and you attempt to archive a finding, GuardDuty displays an error\.
+You can only archive a GuardDuty finding from within Detective if you are also the GuardDuty administrator account for the account associated with the finding\. If you are not a GuardDuty administrator account and you attempt to archive a finding, GuardDuty displays an error\.
 
 **To archive a GuardDuty finding**
 

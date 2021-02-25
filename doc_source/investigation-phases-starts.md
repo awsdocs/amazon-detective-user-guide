@@ -21,8 +21,7 @@ Scoping answers the following types of questions:
 Detective visualizations can help you to identify other entities that were involved or affected\.
 
 **Response**  
-The final step is to respond to the attack in order to stop the attack, minimize the damage, and prevent a similar attack from happening again\.  
-The response phase
+The final step is to respond to the attack in order to stop the attack, minimize the damage, and prevent a similar attack from happening again\.
 
 ## Starting points for a Detective investigation<a name="investigation-starting-points"></a>
 
