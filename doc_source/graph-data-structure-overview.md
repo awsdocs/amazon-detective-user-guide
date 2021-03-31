@@ -84,7 +84,9 @@ For EC2 instances, Detective answers several questions:
 **Role session**  
 Instances of a resource that is assuming a role\. Each role session is identified by the role identifier and a session name\.  
 For each role, Detective answers several questions:  
-+ What resources were involved in this role session?
++ What resources were involved in this role session? In other words, what role was assumed, and what resource assumed the role? 
+
+  Note that for cross\-account role assumption, Detective cannot identify the resource that assumed the role\.
 + What API calls has the role session used?
 + What user agents has the role session used?
 + What ASOs has the role session used?

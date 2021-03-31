@@ -32,6 +32,8 @@ In GuardDuty, the investigation links are available for all GuardDuty findings\.
 
    The Detective console opens in a new tab\. The console opens to the entity or finding profile\.
 
+   If you have not enabled Detective, then the console opens to a landing page that provides an overview of Detective\. From there, you can choose to enable Detective\.
+
 **To pivot to Detective from the Security Hub console**
 
 1. Open the AWS Security Hub console at [https://console\.aws\.amazon\.com/securityhub/](https://console.aws.amazon.com/securityhub/)\.
@@ -45,6 +47,8 @@ In GuardDuty, the investigation links are available for all GuardDuty findings\.
    The link is only available for finding types that Detective supports\.
 
    When you choose **Investigate finding**, the Detective console opens in a new tab\. The console opens to the finding profile\.
+
+   If you have not enabled Detective, the console opens to the Detective landing page\. From there, you can enable Detective\.
 
 ## Troubleshooting the pivot<a name="profile-pivot-troubleshooting"></a>
 

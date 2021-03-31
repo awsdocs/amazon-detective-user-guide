@@ -10,6 +10,24 @@ For a detailed description of each finding type, see the [list of finding types]
 
 These findings are detected using CloudTrail data:
 
+`CredentialAccess:IAMUser/AnomalousBehavior`  
+An API used to gain access to an AWS environment was invoked in an anomalous way\.
+
+`DefenseEvasion:IAMUser/AnomalousBehavior`  
+An API used to evade defensive measures was invoked in an anomalous way\.
+
+`Discovery:IAMUser/AnomalousBehavior`  
+An API commonly used to discover resources was invoked in an anomalous way\.
+
+`Exfiltration:IAMUser/AnomalousBehavior`  
+An API commonly used to collect data from an AWS environment was invoked in an anomalous way\.
+
+`Impact:IAMUser/AnomalousBehavior`  
+An API commonly used to tamper with data or processes in an AWS environment was invoked in an anomalous way\.
+
+`InitialAccess:IAMUser/AnomalousBehavior`  
+An API commonly used to gain unauthorized access to an AWS environment was invoked in an anomalous way\.
+
 `PenTest:IAMUser/KaliLinux`  
 An API was invoked from a Kali Linux EC2 instance\.
 
@@ -18,6 +36,9 @@ An API was invoked from a Parrot Security Linux EC2 instance\.
 
 `PenTest:IAMUser/PentooLinux`  
 An API was invoked from a Pentoo Linux EC2 instance\.
+
+`Persistence:IAMUser/AnomalousBehavior`  
+An API commonly used to maintain unauthorized access to an AWS environment was invoked in an anomalous way\.
 
 `Persistence:IAMUser/NetworkPermissions`  
 A principal invoked an API commonly used to change the network access permissions for security groups, routes, and ACLs in your AWS account\.
@@ -30,6 +51,12 @@ A principal invoked an API commonly used to add, modify, or delete IAM users, gr
 
 `Policy:IAMUser/RootCredentialUsage`  
 An API was invoked using root credentials\.
+
+`PrivilegeEscalation:IAMUser/AdministrativePermissions`  
+A principal has attempted to assign a highly permissive policy to themselves\.
+
+`PrivilegeEscalation:IAMUser/AnomalousBehavior`  
+An API commonly used to used to obtain high\-level permissions to an AWS environment was invoked in an anomalous way\.
 
 `Recon:IAMUser/MaliciousIPCaller`  
 An API was invoked from a known malicious IP address\.
@@ -83,6 +110,9 @@ EC2 instance is receiving inbound connections from a Tor exit node\.
 
 These findings are detected using VPC flow data:
 
+`Backdoor:EC2/C&CActivity.B`  
+An EC2 instance is querying an IP address that is associated with a known command and control server\.
+
 `Backdoor:EC2/DenialOfService.Dns`  
 An EC2 instance is behaving in a manner that may indicate it is being used to perform a Denial of Service \(DoS\) attack using the DNS protocol\.
 
@@ -109,6 +139,12 @@ EC2 instance is generating unusually large amounts of network traffic to a remot
 
 `CryptoCurrency:EC2/BitcoinTool.B`  
 EC2 instance is querying an IP address that is associated with cryptocurrency\-related activity\.
+
+`Impact:EC2/PortSweep`  
+An EC2 instance is probing a port on a large number of IP addresses\.
+
+`Impact:EC2/WinRMBruteForce`  
+An EC2 instance is performing an outbound Windows Remote Management brute force attack\.
 
 `Recon:EC2/PortProbeEMRUnprotectedPort`  
 EC2 instance in an EMR cluster has an unprotected Amazon EMR\-related, sensitive port that is being probed by a known malicious host\.
