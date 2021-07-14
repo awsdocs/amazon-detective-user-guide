@@ -91,6 +91,8 @@ For each role, Detective answers several questions:
 + What user agents has the role session used?
 + What ASOs has the role session used?
 + In what geographic locations has the role session been active?
++ What user or role started this role session?
++ What role sessions started from this role session?
 
 **Finding**  
 Findings uncovered by Amazon GuardDuty that are fed into the Detective source data\.  

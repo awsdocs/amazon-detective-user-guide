@@ -11,8 +11,8 @@ On the following profile panels, you can display a summary of the activity detai
 The activity details can answer these types of questions:
 + Which IP addresses were used?
 + Where were those IP addresses located?
-+ Which API calls did each IP address make?
-+ Which access key identifiers \(AKIDs\) were used to make the calls?
++ Which API calls did each IP address make, and from which services did they make those calls?
++ Which principals or access key identifiers \(AKIDs\) were used to make the calls?
 + What resources were used to make those calls?
 + How many calls were made? How many succeeded and failed?
 + What volume of VPC flow data was sent to or from each IP address?

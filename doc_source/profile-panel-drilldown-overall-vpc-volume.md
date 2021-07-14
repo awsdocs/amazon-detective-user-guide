@@ -45,12 +45,12 @@ To focus on specific activity, you can filter the activity details by the follow
 
    To filter by IP address, you can either specify a value or choose a built\-in filter\.
 
-   For **CIDR patterns**, you can choose to only include public IP addresses, private IP addresses, or IP addresses that match a specific CIDR pattern\.
+   For **CIDR patterns**, you can choose to include only public IP addresses, private IP addresses, or IP addresses that match a specific CIDR pattern\.
 
 1. If you have multiple filters, choose a Boolean option to set how those filters are connected\.  
 ![\[List of available connectors between individual filters for the activity details filter.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_vpc_filterconnectors.png)
 
-1. To remove a filter, choose the **x** icon in the top right corner\.
+1. To remove a filter, choose the **x** icon in the top\-right corner\.
 
 1. To clear all of the filters, choose **Clear filter**\.
 

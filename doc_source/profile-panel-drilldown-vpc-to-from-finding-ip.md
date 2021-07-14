@@ -41,7 +41,7 @@ To focus on specific activity, you can filter the activity details by the follow
 1. If you have multiple filters, choose a Boolean option to set how those filters are connected\.  
 ![\[Filtering field on the activity details for VPC flow volume to and from the finding's IP address\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_vpc_flow_to_from_ip_filter.png)
 
-1. To remove a filter, choose the x icon in the top right corner\.
+1. To remove a filter, choose the x icon in the top\-right corner\.
 
 1. To clear all of the filters, choose **Clear filter**\.
 
