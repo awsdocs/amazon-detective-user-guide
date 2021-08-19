@@ -8,7 +8,7 @@ To display the activity details for the current scope time, choose **Display det
 
 Note that Detective began to store and display the service name for API calls as of July 14, 2021\. That date is highlighted on the profile panel timeline\. For activity that occurs before that date, the service name is **Unknown service**\.
 
-## Content of the activity details \(users, roles, accounts, role sessions\)<a name="drilldown-api-volume-content"></a>
+## Content of the activity details \(users, roles, accounts, role sessions, EC2 instances\)<a name="drilldown-api-volume-content"></a>
 
 For users, roles, accounts, and role sessions, the activity details contain the following information:
 + Each tab provides information about the set of API calls that were issued during the selected time range\. The API calls are grouped by the services that called them\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.
