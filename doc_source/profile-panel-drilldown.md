@@ -1,10 +1,10 @@
 # Exploring activity details on a profile panel<a name="profile-panel-drilldown"></a>
 
-After you assess that a finding might be a true positive, the next step is to dig deeper into the pattern of activity for the related resources\.
+During an investigation, you might want to investigate further into the pattern of activity for an entity\.
 
 On the following profile panels, you can display a summary of the activity details:
 + **Overall API call volume**, except for the profile panel on the user agent profile
-+ **Newly observed geolocations**, except for the profile panel on the federated user profile
++ **Newly observed geolocations**
 + **Overall VPC flow volume**
 + **VPC flow volume to and from the finding IP address**, for findings that are associated with a single IP address
 

@@ -1,8 +1,8 @@
 # Activity details for a geolocation<a name="profile-panel-drilldown-new-geolocations"></a>
 
-The activity details for **Newly observed geolocations** show the API calls that were issued from a geolocation during the scope time\. The API calls include all calls issued from the geolocation\. They are not limited to calls that used the finding or profile entity\.
+The activity details for **Newly observed geolocations** show the API calls that were issued from a geolocation during the scope time\. The API calls include all calls issued from the geolocation\. They are not limited to calls that used the finding or profile entity\. For S3 buckets, the activity calls are API calls made to the S3 bucket\.
 
-The API calls are grouped by the services that issued the calls\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.
+The API calls are grouped by the services that issued the calls\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.
 
 To display the activity details, do one of the following:
 + On the map, choose a geolocation\.
@@ -23,13 +23,13 @@ The activity details contain the following tabs:
 **Observed IP addresses**  
 Initially displays the list of IP addresses that were used to issue API calls from the selected geolocation\.  
 You can expand each IP address to display the resources that issued API calls from that IP address\. The list displays the resource name\. To see the principal ID, pause on the name\.  
-You can then expand each resource to display the specific API calls that were issued from that IP address by that resource\. The API calls are grouped by the services that issued the calls\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
+You can then expand each resource to display the specific API calls that were issued from that IP address by that resource\. The API calls are grouped by the services that issued the calls\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
 
 ![\[View of the Observed IP addresses tab of the Newly observed geolocations panel with an entry expanded to show the hierarchy of IP address, resources, and API methods.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_geo_ips.png)
 
 **Resource**  
 Initially displays the list of resources that issued API calls from the selected geolocation\. The list displays the resource name\. To see the principal ID, pause on the name\. For each resource, the **Resource** tab also displays the associated AWS account\.  
-You can expand each user or role to display the list of API calls that were issued by that resource\. The API calls are grouped by the services that issued the calls\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
+You can expand each user or role to display the list of API calls that were issued by that resource\. The API calls are grouped by the services that issued the calls\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
 You can then expand each API call to display the list of IP addresses from which the resource issued the API call\.  
 
 ![\[View of the Resource tab of the Newly observed geolocations panel, with an entry expanded to show the hierarchy of user or role, API methods, and IP addresses.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_geo_resources.png)

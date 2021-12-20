@@ -1,6 +1,6 @@
-# Navigating to a profile using a URL<a name="profile-navigate-url"></a>
+# Navigating to an entity profile or finding overview using a URL<a name="profile-navigate-url"></a>
 
-To navigate to a finding or entity profile in Amazon Detective, you can use a URL that provides a direct link to it\. The URL identifies the finding or entity\. It can also specify the scope time to use on the profile\.
+To navigate to an entity profile or finding overview in Amazon Detective, you can use a URL that provides a direct link to it\. The URL identifies the finding or entity\. It can also specify the scope time to use on the profile\.
 
 ## Format of a profile URL<a name="profile-url-format"></a>
 
@@ -15,7 +15,7 @@ The Region that you want to use\.
 
 ***type***  
 The type of item for the profile that you are navigating to\.  
-+ `findings` \- Indicates that you are navigating to a finding profile
++ `findings` \- Indicates that you are navigating to a finding overview
 + `entities` \- Indicates that you are navigating to an entity profile
 
 ***namespace***  
@@ -29,6 +29,7 @@ For entities, the namespace is the name of the entity type\.
 + `Ec2Instance`
 + `FederatedUser`
 + `IpAddress`
++ `S3Bucket`
 + `UserAgent`
 
 ***instanceID***  
@@ -41,9 +42,10 @@ The instance identifier of the finding or entity\.
 + For user agents, the user agent name\.
 + For EC2 instances, the instance ID\.
 + For role sessions, the session identifier\. The session identifier uses the format` <rolePrincipalID>:<sessionName>`\.
++ For S3 buckets, the bucket name\.
 The finding or entity must be associated with an enabled account in your behavior graph\.
 
-The URL can also include the following optional parameters, which are used to set the scope time\. For more information about scope time and how it is used on profiles, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\.
+The URL can also include the following optional parameters, which are used to set the scope time\. For more information about scope time and how it is used on profiles, see [Managing the scope time](scope-time-managing.md)\.
 
 **`scopeStart`**  
 Start time for the scope time to use on the profile\.  
@@ -78,7 +80,6 @@ If the values are correct, then you can also check the following\.
 + **Does the finding or entity belong to an enabled member account in your behavior graph?** If the associated account was not invited to the behavior graph as a member account, then the behavior graph does not contain data for that account\.
 
   If an invited member account did not accept the invitation, then the behavior graph does not contain data for that account\.
-+ **For a finding, does Detective support that finding type?** If the finding type is not one of the types listed in [Supported finding types](supported-finding-types.md), then the behavior graph does not contain data for it\.
 + **For a finding, is the finding archived?** Detective does not receive archived findings from Amazon GuardDuty\.
 + **Did the finding or entity occur before Detective began to ingest data into your behavior graph?** If the finding or entity is not present in the data that Detective ingests, then the behavior graph does not contain data for it\.
 + **Is the finding or entity from the correct Region?** Each behavior graph is specific to a Region\. A behavior graph does not contain data from other Regions\.

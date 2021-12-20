@@ -20,7 +20,7 @@ For example, an incoming Detective source data record might include an IP addres
 
 ## Detective analytics<a name="analytics-about"></a>
 
-Analytics are more complex algorithms that dig deeper into the data to provide insight into activity that is associated with entities\.
+Analytics are more complex algorithms that analyze the data to provide insight into activity that is associated with entities\.
 
 For example, one type of Detective analytic analyzes how often activity occurs\. For entities that make API calls, the analytic looks for API calls that the entity doesn't normally use\. The analytic also looks for a large spike in the number of API calls\.
 

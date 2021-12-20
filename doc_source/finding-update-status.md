@@ -6,6 +6,6 @@ You can only archive a GuardDuty finding from within Detective if you are also t
 
 **To archive a GuardDuty finding**
 
-1. In the Detective console, on the finding profile, in the finding details panel, choose **Archive finding**\.
+1. In the Detective console, in the finding details panel, choose **Archive finding**\.
 
 1. When prompted to confirm, choose **Archive**\.

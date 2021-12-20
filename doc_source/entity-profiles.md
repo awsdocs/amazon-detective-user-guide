@@ -9,36 +9,44 @@ An Amazon Detective entity profile is a single page that provides detailed infor
 An entity profile appears when you perform one of the following actions:
 + From Amazon GuardDuty, choose the option to investigate an entity that is related to a selected finding\.
 
-  See [Pivoting to a profile from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
+  See [Pivoting to an entity profile or finding overview from Amazon GuardDuty or AWS Security Hub](profile-pivot-from-service.md)\.
 + Go to the Detective URL for the entity profile\.
 
-  See [Navigating to a profile using a URL](profile-navigate-url.md)\.
+  See [Navigating to an entity profile or finding overview using a URL](profile-navigate-url.md)\.
 + Use the Detective search to look up an entity\.
 
   See [Searching for a finding or entity](detective-search.md)\.
-+ Choose a link to the entity profile from another entity or finding profile\.
++ Choose a link to the entity profile from another entity profile or from a finding overview\.
 
 ## Scope time for an entity profile<a name="entity-profile-scope-time"></a>
 
 When you navigate directly to an entity profile without providing the scope time, the scope time is set to the previous 24 hours\.
 
-When you navigate to an entity profile from another profile, the currently selected scope time remains in place\.
+When you navigate to an entity profile from another entity profile, the currently selected scope time remains in place\.
+
+When you navigate to an entity profile from a finding overview, the scope time is set to the finding time window\.
 
 All times are displayed in UTC\.
 
-For information on setting the scope time, see [Managing the scope time used on finding and entity profiles](scope-time-managing.md)\.
+For information on setting the scope time, see [Managing the scope time](scope-time-managing.md)\.
 
 ## Entity identifier and type<a name="entity-identifier-type"></a>
 
 At the top of the profile are the entity identifier and the entity type\. Each entity type has a corresponding icon, to provide a visual indicator of the type of profile\.
+
+## Involved findings<a name="entity-profile-associated-findings"></a>
+
+Each profile contains a list of findings that the entity was involved in during the scope time\.
+
+You can see the details for each finding, change the scope time to reflect the finding time window, and go to the finding overview to look for other involved resources\.
+
+See [Viewing details for associated findings](entity-finding-list.md)\.
 
 ## Profile panels containing entity details and analytics results<a name="entity-profile-panels"></a>
 
 Each entity profile contains a set of one or more tabs\. Each tab contains one or more profile panels\. Each profile panel contains text and visualizations that are generated from the behavior graph data\. The specific tabs and profile panels are tailored to the entity type\.
 
 For most entities, the panel at the top of the first tab provides high\-level summary information about the entity\.
-
-Each profile also contains a panel that lists the findings that the entity was involved in around the scope time\. See [Viewing a list of findings that involve an entity](profile-panel-finding-list.md)\.
 
 Other profile panels highlight different types of activity\. For an entity that is involved with a finding, the information on the entity profile panels can provide additional supporting evidence to help complete an investigation\. Each profile panel provides access to guidance on how to use the information\. For more information, see [Using profile panel guidance during an investigation](profile-panel-guidance.md)\. 
 

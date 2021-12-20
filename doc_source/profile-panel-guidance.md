@@ -1,6 +1,6 @@
 # Using profile panel guidance during an investigation<a name="profile-panel-guidance"></a>
 
-Each profile panel is designed to provide answers to specific questions that arise as you investigate a finding and analyze the activity for the related entities\.
+Each profile panel is designed to provide answers to specific questions that arise as you conduct an investigation and analyze the activity for the related entities\.
 
 The guidance provided for each profile panel helps you find these answers\.
 

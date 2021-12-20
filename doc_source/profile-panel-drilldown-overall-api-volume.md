@@ -8,10 +8,14 @@ To display the activity details for the current scope time, choose **Display det
 
 Note that Detective began to store and display the service name for API calls as of July 14, 2021\. That date is highlighted on the profile panel timeline\. For activity that occurs before that date, the service name is **Unknown service**\.
 
-## Content of the activity details \(users, roles, accounts, role sessions, EC2 instances\)<a name="drilldown-api-volume-content"></a>
+## Content of the activity details \(users, roles, accounts, role sessions, EC2 instances, S3 buckets\)<a name="drilldown-api-volume-content"></a>
 
-For users, roles, accounts, and role sessions, the activity details contain the following information:
-+ Each tab provides information about the set of API calls that were issued during the selected time range\. The API calls are grouped by the services that called them\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.
+For users, roles, accounts, role sessions, and S3 buckets, the activity details contain the following information:
++ Each tab provides information about the set of API calls that were issued during the selected time range\.
+
+  For S3 buckets, the information reflects API calls that were made to the S3 bucket\.
+
+  The API calls are grouped by the services that called them\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.
 + For each entry, the activity details show the number of successful and failed calls\. The **Observed IP addresses** tab also shows the location of each IP address\.
 + Each entry also shows information about who made the calls\. For accounts, the activity details identify the users or roles\. For roles, the activity details identify the role sessions\. For users and role sessions, the activity details identify the access key identifiers \(AKIDs\)\.
 
@@ -21,13 +25,13 @@ The activity details contain the following tabs:
 
 **Observed IP addresses**  
 Initially displays the list of IP addresses used to issue API calls\.  
-You can expand each IP address to display the list of API calls that were issued from that IP address\. The API calls are grouped by the services that called them\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
+You can expand each IP address to display the list of API calls that were issued from that IP address\. The API calls are grouped by the services that called them\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
 You can then expand each API call to display the list of callers from that IP address\. Depending on the profile, the caller might be a user, role, role session, or AKID\.  
 
 ![\[View of the Observed IP addresses tab of the Overall API call volume panel, with an entry expanded to show the hierarchy of IP address, API calls, and AKIDs. API calls are grouped by service.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_ipaddress.png)
 
 **API method by service**  
-Initially displays the list of API calls that were issued\. The API calls are grouped by the services that issued the calls\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
+Initially displays the list of API calls that were issued\. The API calls are grouped by the services that issued the calls\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under **Unknown service**\.  
 You can expand each API method to display the list of IP addresses from which the calls were issued\.  
 You can then expand each IP address to display the list of AKIDs that issued that API call from that IP address\.  
 
@@ -36,7 +40,7 @@ You can then expand each IP address to display the list of AKIDs that issued tha
 **Resource or Access Key ID**  
 Initially displays the list of users, roles, role sessions, or AKIDs that were used to issue API calls\.  
 You can expand each caller to display the list of IP addresses from which the caller issued API calls\.  
-You can then expand each IP address to display the list of API calls that were issued from that IP address by that caller\. The API calls are grouped by the services that issued the calls\. If Detective cannot determine the service that issued a call, the call is listed under** Unknown service**\.  
+You can then expand each IP address to display the list of API calls that were issued from that IP address by that caller\. The API calls are grouped by the services that issued the calls\. For S3 buckets, the service is always Amazon S3\. If Detective cannot determine the service that issued a call, the call is listed under** Unknown service**\.  
 
 ![\[View of the Resource tab of the Overall API call volume panel, with an entry expanded to show the hierarchy of AKIDs, IP addresses, and API calls grouped by service.\]](http://docs.aws.amazon.com/detective/latest/userguide/images/screen_profile_panel_drilldown_api_resource.png)
 

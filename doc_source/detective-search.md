@@ -1,6 +1,6 @@
 # Searching for a finding or entity<a name="detective-search"></a>
 
-With the Amazon Detective search function, you can search for a finding or entity\. From the search results, you can navigate to a finding or entity profile\.
+With the Amazon Detective search function, you can search for a finding or entity\. From the search results, you can navigate to an entity profile or a finding overview\.
 
 ## Completing the search<a name="detective-search-completing"></a>
 
@@ -23,9 +23,8 @@ For each entity type, the following identifiers are supported\.
   + Session name
   + Principal ID of the role that was assumed
   + Name of the role that was assumed
++ For S3 buckets, the bucket name or bucket ARN\.
 + For findings, the finding identifier or finding ARN\.
-
-  The finding type must be one that Detective supports\. See [Supported finding types](supported-finding-types.md)\.
 
 **To search for a finding or entity**
 
@@ -49,7 +48,7 @@ For each entity type, the following identifiers are supported\.
 
 When you complete the search, Detective displays a list of up to 10,000 matching results\. For searches that use a unique identifier, there is only one matching result\.
 
-From the results, to navigate to the profile for the finding or entity, choose the identifier\.
+From the results, to navigate to the entity profile or finding overview, choose the identifier\.
 
 For findings, roles, users, and EC2 instances, the search results include the associated account\. To navigate to the profile for the account, choose the account identifier\.
 
@@ -59,7 +58,6 @@ If Detective does not find the finding or entity, first check that you entered t
 + **Does the finding or entity belong to an enabled member account in your behavior graph?** If the associated account was not invited to the behavior graph as a member account, then the behavior graph does not contain data for that account\.
 
   If an invited member account did not accept the invitation, then the behavior graph does not contain data for that account\.
-+ **For a finding, does Detective support that finding type?** If the finding type is not one of the types listed in [Supported finding types](supported-finding-types.md), then the behavior graph does not contain data for it\.
 + **For a finding, is the finding archived?** Detective does not receive archived findings from Amazon GuardDuty\.
 + **Did the finding or entity occur before Detective began to ingest data into your behavior graph?** If the finding or entity is not present in the data that Detective ingests, then the behavior graph does not contain data for it\.
 + **Is the finding or entity from the correct Region?** Each behavior graph is specific to a Region\. A behavior graph does not contain data from other Regions\.

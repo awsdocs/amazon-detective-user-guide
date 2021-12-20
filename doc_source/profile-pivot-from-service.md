@@ -1,14 +1,14 @@
-# Pivoting to a profile from Amazon GuardDuty or AWS Security Hub<a name="profile-pivot-from-service"></a>
+# Pivoting to an entity profile or finding overview from Amazon GuardDuty or AWS Security Hub<a name="profile-pivot-from-service"></a>
 
-From the Amazon GuardDuty and AWS Security Hub consoles, you can navigate to Amazon Detective finding profiles\. From GuardDuty, you can also navigate to the entity profile for an entity that is related to a finding\.
+From the Amazon GuardDuty console, you can navigate to the entity profile for an entity that is related to a finding\.
 
-These links can help to streamline the investigation process\. When a finding might be a genuine cause for concern, you can quickly use Detective to see the associated resource activity and determine next steps\. You can then archive the finding if it is a false positive or explore further to determine the scope of the problem\.
+From the GuardDuty and AWS Security Hub consoles, you can also navigate to a finding overview, which also provides links to the entity profiles for the involved entities\.
+
+These links can help to streamline the investigation process\. You can quickly use Detective to see the associated entity activity and determine next steps\. You can then archive a finding if it is a false positive or explore further to determine the scope of the problem\.
 
 ## How to pivot to the Amazon Detective console<a name="profile-pivot-how-to"></a>
 
-In Security Hub, the investigation links only work for GuardDuty finding types that Detective supports\. See [Supported finding types](supported-finding-types.md)\.
-
-In GuardDuty, the investigation links are available for all GuardDuty findings\. GuardDuty presents different investigation options based on whether Detective supports the finding type\.
+The investigation links are available for all GuardDuty findings\. GuardDuty also allows you to choose whether to navigate to an entity profile or to the finding overview\.
 
 **To pivot to Detective from the GuardDuty console**
 
@@ -24,9 +24,7 @@ In GuardDuty, the investigation links are available for all GuardDuty findings\.
 
    GuardDuty displays a list of available items to investigate in Detective\.
 
-   The list always contains related entities, such as IP addresses or EC2 instances associated with the finding\.
-
-   If the finding type is supported in Detective, then the list also includes the finding\.
+   The list contains both the related entities, such as IP addresses or EC2 instances, and the finding\.
 
 1. Choose an entity or the finding\.
 
@@ -44,9 +42,9 @@ In GuardDuty, the investigation links are available for all GuardDuty findings\.
 
 1. In the details pane, choose **Investigate in Detective** and then choose **Investigate finding**\.
 
-   The link is only available for finding types that Detective supports\.
+   When you choose **Investigate finding**, the Detective console opens in a new tab\. The console opens to the finding overview\.
 
-   When you choose **Investigate finding**, the Detective console opens in a new tab\. The console opens to the finding profile\.
+   The Detective console always opens to the Region where the finding originated, even if you pivot from your aggregation Region\. For more information about finding aggregation, see [Aggregating findings across Regions](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation.html) in the *AWS Security Hub User Guide*\.
 
    If you have not enabled Detective, the console opens to the Detective landing page\. From there, you can enable Detective\.
 
@@ -59,7 +57,6 @@ To use the pivot, one of the following must be true:
 For more information about the recommendation to align administrator accounts, see [Recommended alignment with Amazon GuardDuty and AWS Security Hub](https://docs.aws.amazon.com/detective/latest/adminguide/detective-prerequisites.html#recommended-service-alignment) in *Detective Administration Guide*\.
 
 If the pivot does not work, check the following\.
-+ **Does Detective support that finding type?** If the finding type is not one of the types listed in [Supported finding types](supported-finding-types.md), then the behavior graph does not contain data for it\.
 + **Does the finding belong to an enabled member account in your behavior graph?** If the associated account was not invited to the behavior graph as a member account, then the behavior graph does not contain data for that account\.
 
   If an invited member account did not accept the invitation, then the behavior graph does not contain data for that account\.

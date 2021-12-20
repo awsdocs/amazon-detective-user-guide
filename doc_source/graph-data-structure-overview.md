@@ -108,6 +108,17 @@ For each IP address, Detective answers several questions:
 + In what geographic locations has the IP address been active?
 + What EC2 instances has this IP address been assigned to and communicated with?
 
+**S3 bucket**  
+S3 buckets that are in the Detective source data\.  
+For each S3 bucket, Detective answers these questions:  
++ What principals interacted with the S3 bucket?
++ What API calls were made to the S3 bucket?
++ From what geographic locations did principals make API calls to the S3 bucket?
++ What user agents were used to interact with the S3 bucket?
++ What ASOs were used to interact with the S3 bucket?
+You can delete an S3 bucket and then create a new bucket with the same name\. Because Detective uses the S3 bucket name to identify the S3 bucket, it treats these as a single S3 bucket entity\. On the entity profile, **Creation time** is the first creation time\. **Deletion time** is the most recent deletion time\.  
+To view all of the creation and deletion events, set the scope time to start with the creation time and end with the deletion time\. See [Managing the scope time](scope-time-managing.md)\. On the **Overall API call volume** profile panel, display the activity details for the scope time\. Filter the API methods to show `Create` and `Delete` methods\. See [Activity details for Overall API call volume](profile-panel-drilldown-overall-api-volume.md)\.
+
 **User agent**  
 User agents that are present in the Detective source data\.  
 For each user agent, Detective answers questions such as the following:  
